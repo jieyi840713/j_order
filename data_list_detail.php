@@ -58,6 +58,7 @@ $cate_qualify = $pdo->query($q_sql)->fetchAll();
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">PO_NO</th>
+                <th scope="col">Picture</th>
                 <th scope="col">product_name</th>
                 <th scope="col">quantity</th>
                 <th scope="col">qualify</th>
@@ -85,10 +86,17 @@ $cate_qualify = $pdo->query($q_sql)->fetchAll();
                     };
                 };
 
+                for ($i = 1; $i <= 109; $i++) {
+                    if ($r['product_name'] == $i) {
+                        $pic_name = $cate_product_name[$i - 1]['img_name'];
+                    };
+                };
+
                 ?>
                 <tr>
                     <td><?= $r['sid'] ?></td>
                     <td><?= $r['PO_NO'] ?></td>
+                    <td><img src="./img/<?= $pic_name ?>"></td>
                     <td><?= $product_name ?></td>
                     <td><?= $r['quantity'] ?></td>
                     <td><?= $qualify ?></td>

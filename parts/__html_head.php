@@ -7,6 +7,13 @@
     <title><?= $page_title ?? "" ?></title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <style>
+        img {
+            width: 200px;
+            height: 100px;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
