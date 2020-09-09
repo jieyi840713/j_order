@@ -80,16 +80,21 @@ $cate_qualify = $pdo->query($q_sql)->fetchAll();
                         $product_status = $cate_destil_status[$i - 1]['product_status'];
                     }
                 };
-                for ($i = 1; $i <= 109; $i++) {
+                $i = 1;
+                while (true) {
                     if ($r['product_name'] == $i) {
                         $product_name = $cate_product_name[$i - 1]['product_name'];
+                        break;
                     };
+                    $i++;
                 };
-
-                for ($i = 1; $i <= 109; $i++) {
+                $j = 1;
+                while (true) {
                     if ($r['product_name'] == $i) {
-                        $pic_name = $cate_product_name[$i - 1]['img_name'];
+                        $pic_name = $cate_product_name[$i - 1]['photo'];
+                        break;
                     };
+                    $j++;
                 };
 
                 ?>
@@ -97,7 +102,7 @@ $cate_qualify = $pdo->query($q_sql)->fetchAll();
                     <td><?= $r['sid'] ?></td>
                     <td><?= $r['PO_NO'] ?></td>
                     <td><img src="./img/<?= $pic_name ?>"></td>
-                    <td><?= $product_name ?></td>
+                    <td><?= $product_name . " " . $r['product_name'] ?></td>
                     <td><?= $r['quantity'] ?></td>
                     <td><?= $qualify ?></td>
                     <td><?= $product_status ?></td>
