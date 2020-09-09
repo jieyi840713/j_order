@@ -1,0 +1,10 @@
+INSERT INTO `address_book` (`sid`, `name`, `email`, `mobile`, `birthday`, `address`, `created_at`) 
+VALUES 
+(NULL, 'ZJE2', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE3', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE4', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE5', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE6', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE7', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE8', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW()),
+(NULL, 'ZJE9', 'ssss@gmail.com', '091234678', '2020-09-03', '新北市', NOW());
